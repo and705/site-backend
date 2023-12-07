@@ -1,0 +1,13 @@
+spring:
+  config:
+    import: optional:secrets.yaml
+
+  jpa:
+    hibernate:
+      ddl-auto: validate #validate #create-drop
+    show-sql: true
+  flyway:
+    baseline-on-migrate: true
+
+
+
