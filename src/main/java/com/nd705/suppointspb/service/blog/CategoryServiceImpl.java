@@ -1,10 +1,9 @@
-package com.nd705.suppointspb.service.impl;
+package com.nd705.suppointspb.service.blog;
 
-import com.nd705.suppointspb.dao.CategoryRepository;
+import com.nd705.suppointspb.dao.blog.CategoryRepository;
 import com.nd705.suppointspb.entity.blog.Category;
 import com.nd705.suppointspb.exception.ResourceNotFoundException;
 import com.nd705.suppointspb.model.blog.CategoryDto;
-import com.nd705.suppointspb.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;

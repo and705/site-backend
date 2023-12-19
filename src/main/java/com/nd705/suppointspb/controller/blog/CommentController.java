@@ -1,7 +1,7 @@
-package com.nd705.suppointspb.controller;
+package com.nd705.suppointspb.controller.blog;
 
 import com.nd705.suppointspb.model.blog.CommentDto;
-import com.nd705.suppointspb.service.CommentService;
+import com.nd705.suppointspb.service.blog.CommentService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;

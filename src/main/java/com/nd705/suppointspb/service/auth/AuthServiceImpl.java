@@ -1,16 +1,14 @@
-package com.nd705.suppointspb.service.impl;
+package com.nd705.suppointspb.service.auth;
 
 import com.nd705.suppointspb.entity.user.Role;
 import com.nd705.suppointspb.entity.user.User;
-import com.nd705.suppointspb.dao.UserRepository;
+import com.nd705.suppointspb.dao.auth.UserRepository;
 import com.nd705.suppointspb.exception.ApiException;
 import com.nd705.suppointspb.model.auth.LoginResponse;
 import com.nd705.suppointspb.model.auth.LoginDto;
 import com.nd705.suppointspb.model.auth.RegisterDto;
 import com.nd705.suppointspb.security.JwtIssuer;
 import com.nd705.suppointspb.security.UserPrincipal;
-import com.nd705.suppointspb.service.AuthService;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;

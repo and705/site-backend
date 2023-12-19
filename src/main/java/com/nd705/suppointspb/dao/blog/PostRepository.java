@@ -1,4 +1,4 @@
-package com.nd705.suppointspb.dao;
+package com.nd705.suppointspb.dao.blog;
 
 import com.nd705.suppointspb.entity.blog.Category;
 import com.nd705.suppointspb.entity.blog.Post;

@@ -1,13 +1,12 @@
-package com.nd705.suppointspb.service.impl;
+package com.nd705.suppointspb.service.blog;
 
-import com.nd705.suppointspb.dao.CommentRepository;
-import com.nd705.suppointspb.dao.PostRepository;
+import com.nd705.suppointspb.dao.blog.CommentRepository;
+import com.nd705.suppointspb.dao.blog.PostRepository;
 import com.nd705.suppointspb.entity.blog.Comment;
 import com.nd705.suppointspb.entity.blog.Post;
 import com.nd705.suppointspb.exception.ApiException;
 import com.nd705.suppointspb.exception.ResourceNotFoundException;
 import com.nd705.suppointspb.model.blog.CommentDto;
-import com.nd705.suppointspb.service.CommentService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;

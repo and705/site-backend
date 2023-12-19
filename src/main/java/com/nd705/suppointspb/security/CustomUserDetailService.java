@@ -1,12 +1,7 @@
 package com.nd705.suppointspb.security;
 
-import com.nd705.suppointspb.service.AuthService;
-import com.nd705.suppointspb.service.impl.AuthServiceImpl;
-
-import com.nd705.suppointspb.service.impl.UserServiceImpl;
-import lombok.AllArgsConstructor;
+import com.nd705.suppointspb.service.blog.UserServiceImpl;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

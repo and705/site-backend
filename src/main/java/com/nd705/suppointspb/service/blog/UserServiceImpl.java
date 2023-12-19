@@ -1,10 +1,9 @@
-package com.nd705.suppointspb.service.impl;
+package com.nd705.suppointspb.service.blog;
 
 import com.nd705.suppointspb.entity.user.Role;
 import com.nd705.suppointspb.entity.user.User;
-import com.nd705.suppointspb.dao.UserRepository;
+import com.nd705.suppointspb.dao.auth.UserRepository;
 import com.nd705.suppointspb.model.LoginSignInDTO;
-import com.nd705.suppointspb.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

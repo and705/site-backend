@@ -1,8 +1,8 @@
-package com.nd705.suppointspb.controller;
+package com.nd705.suppointspb.controller.blog;
 
 import com.nd705.suppointspb.model.blog.PostDto;
 import com.nd705.suppointspb.model.blog.PostResponse;
-import com.nd705.suppointspb.service.PostService;
+import com.nd705.suppointspb.service.blog.PostService;
 import com.nd705.suppointspb.utils.AppConstants;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

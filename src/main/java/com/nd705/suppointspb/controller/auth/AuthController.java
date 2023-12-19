@@ -1,8 +1,8 @@
-package com.nd705.suppointspb.controller;
+package com.nd705.suppointspb.controller.auth;
 
 import com.nd705.suppointspb.model.auth.LoginResponse;
 import com.nd705.suppointspb.model.auth.LoginDto;
-import com.nd705.suppointspb.service.impl.AuthServiceImpl;
+import com.nd705.suppointspb.service.auth.AuthServiceImpl;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.validation.annotation.Validated;

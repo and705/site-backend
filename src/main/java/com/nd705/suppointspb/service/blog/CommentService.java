@@ -1,4 +1,4 @@
-package com.nd705.suppointspb.service;
+package com.nd705.suppointspb.service.blog;
 
 import com.nd705.suppointspb.model.blog.CommentDto;
 
