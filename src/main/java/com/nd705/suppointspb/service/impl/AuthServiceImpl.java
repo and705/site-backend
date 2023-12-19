@@ -1,7 +1,7 @@
 package com.nd705.suppointspb.service.impl;
 
-import com.nd705.suppointspb.Entity.User.Role;
-import com.nd705.suppointspb.Entity.User.User;
+import com.nd705.suppointspb.entity.user.Role;
+import com.nd705.suppointspb.entity.user.User;
 import com.nd705.suppointspb.dao.UserRepository;
 import com.nd705.suppointspb.exception.ApiException;
 import com.nd705.suppointspb.model.auth.LoginResponse;
@@ -10,6 +10,7 @@ import com.nd705.suppointspb.model.auth.RegisterDto;
 import com.nd705.suppointspb.security.JwtIssuer;
 import com.nd705.suppointspb.security.UserPrincipal;
 import com.nd705.suppointspb.service.AuthService;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -19,14 +20,12 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
-
 @Service
 @RequiredArgsConstructor
 public class AuthServiceImpl implements AuthService {
     private final JwtIssuer jwtIssuer;
     private final AuthenticationManager authenticationManager;
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     @Override
     public LoginResponse login(LoginDto loginDto) {
@@ -68,6 +67,11 @@ public class AuthServiceImpl implements AuthService {
         userRepository.save(user);
 
         return "User registered successfully!.";
+    }
+
+    @Override
+    public User findByEmail(String email) {
+        return userRepository.findFirstByEmail(email);
     }
 }
 

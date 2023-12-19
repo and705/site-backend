@@ -1,6 +1,6 @@
 package com.nd705.suppointspb.dao;
 
-import com.nd705.suppointspb.Entity.User.User;
+import com.nd705.suppointspb.entity.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

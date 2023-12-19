@@ -1,7 +1,7 @@
 package com.nd705.suppointspb.service.impl;
 
-import com.nd705.suppointspb.Entity.User.Role;
-import com.nd705.suppointspb.Entity.User.User;
+import com.nd705.suppointspb.entity.user.Role;
+import com.nd705.suppointspb.entity.user.User;
 import com.nd705.suppointspb.dao.UserRepository;
 import com.nd705.suppointspb.model.LoginSignInDTO;
 import com.nd705.suppointspb.service.UserService;

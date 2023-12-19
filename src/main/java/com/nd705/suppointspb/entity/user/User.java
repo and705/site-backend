@@ -1,4 +1,4 @@
-package com.nd705.suppointspb.Entity.User;
+package com.nd705.suppointspb.entity.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

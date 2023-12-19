@@ -1,6 +1,6 @@
 package com.nd705.suppointspb.service;
 
-import com.nd705.suppointspb.Entity.User.User;
+import com.nd705.suppointspb.entity.user.User;
 import com.nd705.suppointspb.model.LoginSignInDTO;
 
 public interface UserService {
