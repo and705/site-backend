@@ -19,15 +19,19 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@RequiredArgsConstructor
+
 public class PostServiceImpl implements PostService {
     private PostRepository postRepository;
 
-    private ModelMapper mapper;
+    private ModelMapper mapper = new ModelMapper();
 
     private CategoryRepository categoryRepository;
 
-//    public PostServiceImpl(PostRepository postRepository, ModelMapper mapper,
+    public PostServiceImpl(PostRepository postRepository, CategoryRepository categoryRepository) {
+        this.postRepository = postRepository;
+        this.categoryRepository = categoryRepository;
+    }
+    //    public PostServiceImpl(PostRepository postRepository, ModelMapper mapper,
 //                           CategoryRepository categoryRepository) {
 //        this.postRepository = postRepository;
 //        this.mapper = mapper;
